@@ -18,7 +18,7 @@ const Tour = ({ tour, onDelete }) => {
           {showMore ? tour.info : `${tour.info.substring(0, 200)}...`}
         </p>
         <button id={`see-more-${tour.id}`} onClick={handleSeeMoreClick}>
-          {showMore ? "Show Less" : "See more"}
+          {showMore ? "Show less" : "See more"}
         </button>
         <button id={`delete-btn-${tour.id}`} onClick={() => onDelete(tour.id)}>
           Delete
